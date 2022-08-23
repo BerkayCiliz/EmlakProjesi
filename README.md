@@ -1,1 +1,0 @@
-# EmlakProjesi
