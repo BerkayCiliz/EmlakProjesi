@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Müsteri Emlak Ekleme</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="form">
+    <form method="post" action="/musteriEkle" th:object="${registerRequest}">
+        <h2>Emlak Ekle</h2>
+        <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="emlakTur" placeholder="Emlak Türü">
+        </div>
+        <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="metrekare" placeholder="Metrekaresi">
+        </div>
+        <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="odaSayi" placeholder="Oda sayısı">
+        </div>
+        <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="kat" placeholder="Bulunduğu Kat">
+        </div>
+        <div class="input-box">
+            <input type="submit" name="Ekle" value="Ekle">
+        </div>
+        <a href="/">İlk sayfaya dön</a>
+    </form>
+</div>
+</body>
+</html>
